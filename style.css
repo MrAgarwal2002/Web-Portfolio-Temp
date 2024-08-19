@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #eaeaea; /* Light grey text color */
+  background: linear-gradient(135deg, #1f8ef1, #4b74ff, #5d5dfc);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  background: linear-gradient(135deg, #2b6cb0, #2c5282);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0;
+  font-weight: 400;
+  position: relative;
+  top: -20px; /* Move the tag up */
+}
+
+#welcome-section {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: -50px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem; /* Adjusted margin to center */
+}
+
+#profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  width: 60%;
+  line-height: 1.6;
+  color: #343a40; /* Darker grey for readability */
+}
+
+.interests {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #666; /* Slightly darker grey for better readability */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.button {
+  background-color: #4b74ff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #2c5282;
+}
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+footer {
+  background-color: #2b6cb0;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  font-weight: 600;
+}
+
+/* Add styles for the contact page */
+#contact-section {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact-form label {
+  font-weight: 600;
+  color: #333; /* Darker text color for better readability */
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#contact-form button {
+  background-color: #4b74ff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #2c5282;
+}
+
+/* Updated styles for the project page */
+.project {
+  background-color: #ffc9c9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  color: #333; /* Dark color for readability */
+  margin-bottom: 0.5rem;
+}
+
+.project ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555; /* Slightly lighter color for better readability */
+}
+
+.project h3 strong,
+.project ul li strong {
+  color: #000000; /* Black color for strong text */
+  font-weight: 700; /* Bold text */
+}
+
+.project p {
+  color: #ffffff; /* White color for paragraphs */
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333; /* Dark color for readability */
+}
+
+#skills {
+  margin-top: 2rem;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333; /* Dark color for readability */
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#skills ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ffc9c9;
+}
+
+#skills ul li strong {
+  color: #ced4da;
+  font-weight: 700; /* Bold text */
+}
+
+/* Updated styles for achievements */
+#achievements {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+}
+
+#achievements h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff; /* White color for heading */
+  text-align: center;
+  font-weight: 700;
+}
+
+.achievement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333; /* Dark background for items */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-icon {
+  font-size: 1.5rem;
+  color: #4b74ff; /* Blue color for the checkmark */
+  margin-right: 1rem;
+}
+
+.achievement-item p {
+  margin: 0;
+  color: #ffffff; /* White color for achievement text */
+  font-size: 1rem;
+  line-height: 1.6;
+}
